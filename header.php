@@ -23,7 +23,14 @@
             <img src="img/logo-1.png" alt="logo">
         </a>
         
-        <a><a href="index.php" class="text-info">Home</a></a>
+        <?php
+            if (isset($_SESSION['userId'])) {
+                echo '<a><a href="page.php" class="text-info">Home</a></a>';
+            }
+            else {
+                echo '';
+            }
+        ?>
         
         <div class="header-login">
 

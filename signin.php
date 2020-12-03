@@ -16,7 +16,7 @@
                 else {
                     echo '<form action="includes/login.inc.php" method="POST">
                     <input class="col" type="text" name="mailuid" placeholder="Username/Email">
-                    <input class="col" type="password" name="pwd" placeholder="Passwpord">
+                    <input class="col" type="password" name="pwd" placeholder="Password">
                     <button class="col" type="submit" name="login-submit">Login</button>
                 </form>
                 or

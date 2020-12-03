@@ -6,10 +6,11 @@
     <main>
         <div class="container">
             <section class="section-default">
-
                 <?php
                     if (isset($_SESSION['userId'])) {
                         echo '<p class="login-status">You are logged in!</p>';
+                        sleep(1);
+                        header("Location: ../PHPWorkspace/page.php");
                     }
                     else {
                         echo '<p class="login-status">You are not logged in, Please login to continue!</p>';
